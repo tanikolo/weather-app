@@ -1,0 +1,124 @@
+body {
+  background: #2193b0;
+  background: -webkit-linear-gradient(#6dd5ed, #2193b0);
+  background: linear-gradient(#6dd5ed, #2193b0);
+  background-size: cover;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#input {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 15px;
+  font-size: 20px;
+  color: #2193b0;
+  text-align: center;
+}
+
+#input:focus {
+  background-color: #fff;
+}
+
+#when-where {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#city {
+  color: #fff;
+  font-size: 50px;
+}
+
+#date {
+  color: #fff;
+  font-size: 24px;
+  margin-top: -20px;
+}
+
+#now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#temperature {
+  color: #fff;
+  font-size: 110px;
+  font-weight: bold;
+  text-shadow: 5px 10px #243a73;
+  margin: 0;
+}
+
+#feelsLike {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#conditions {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0px 1px 2px #fff;
+  margin-top: -20px;
+}
+
+#variation {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+
+@media all and (max-width: 414px) {
+  
+  #city {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+    #date {
+  font-size: 18x;
+}
+}
+
+@media all and (max-width: 320px) {
+  
+  #container {
+  margin-top: 20px;
+}
+  
+  #input {
+  width: 200px;
+  }
+  
+  #city {
+    font-size: 35px;
+  }
+  
+  #date {
+  font-size: 20px;
+}
+  
+  #feelsLike, #conditions, #variation {
+  font-size: 20px;
+}
+}
